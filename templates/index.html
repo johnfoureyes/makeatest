@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Free Gym Website Template | Home :: w3layouts</title>
+
+<link href="progettoDjango{% static 'admin/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+<link href="progettoDjango{% static 'admin/css/style.css' %}" rel='stylesheet' type='text/css' />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800'
+	rel='stylesheet' type='text/css'>
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700'
+	rel='stylesheet' type='text/css'>
+<script type="application/x-javascript">
+
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+
+</script>
+<!--<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />-->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop : $(this.hash).offset().top
+			}, 1200);
+		});
+	});
+</script>
+<!-- grid-slider -->
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!-- //grid-slider -->
+</head>
+<body>
+
+	<!-- start header_bottom -->
+	<div class="header-bottom">
+		<div class="container">
+
+			<div class="social">
+				<ul>
+					<li class="facebook"><a href="#"><span> </span></a></li>
+					<li class="twitter"><a href="#"><span> </span></a></li>
+					<li class="pinterest"><a href="#"><span> </span></a></li>
+					<li class="google"><a href="#"><span> </span></a></li>
+					<li class="tumblr"><a href="#"><span> </span></a></li>
+					<li class="instagram"><a href="#"><span> </span></a></li>
+					<li class="rss"><a href="#"><span> </span></a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- end header_bottom -->
+	<!-- start menu -->
+	<div class="menu" id="menu">
+		<div class="container">
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" alt="" /></a>
+			</div>
+			<div class="h_menu4">
+				<!-- start h_menu4 -->
+				<a class="toggleMenu" href="#">Menu</a>
+				<ul class="nav">
+					<li class="active">
+					<a href="#">Home</a></li>
+					<li>
+					<a href="Contatti">Contact</a></li>
+				</ul>
+				<script type="text/javascript" src="js/nav.js"></script>
+			</div>
+			<!-- end h_menu4 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- end menu -->
+
+	<!-- start header_top quello con la foto grande-->
+	<div class="header">
+		<div class="container">
+			<div class="header-text">
+				<h1>Benvenuto</h1>
+				<h2>Registrati o effettua il Login</h2>
+				<br>
+				<div class="banner_btn">
+					<a href="registrazione/registrazione">Registrati</a> <a href="loggati/login">Login</a>
+				</div>
+			</div>
+			<div class="header-arrow">
+				<a href="#menu" class="class scroll"><span> </span> </a>
+			</div>
+		</div>
+	</div>
+	<!-- end header_top -->
+
+
+
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row section group">
+
+				<div class="col-md-4">
+					<div class="f-logo">
+						<img src="/SportCity/images/logo.png"
+							style="margin-top: 23px; margin-left: -20%;">
+					</div>
+				</div>
+				<div class="col-md-6" style="left: 55px; width: 767px;">
+
+					<!-- Blurb -->
+					<section>
+					<h2 class="cnt">Policy Cookie</h2>
+					<p>Utilizziamo cookie tecnici assimilati e di profilazione per
+						rendere pi agevole la navigazione e migliore il servizio.
+						Cliccando su un qualunque elemento del sito web, acconsenti
+						all'uso dei cookie.</p>
+					</section>
+
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="container">
+			<div class="copy">
+				<p>COPYRIGHT 2016 - ALL RIGHTS RESERVED - WEBSITE CREATED BY
+					PIETRO D'ANGELO & SAMUELE FICARA & FRANCESCO IRITI</p>
+			</div>
+			<div class="social">
+				<ul>
+					<li class="facebook"><a href="#"><span> </span></a></li>
+					<li class="twitter"><a href="#"><span> </span></a></li>
+					<li class="pinterest"><a href="#"><span> </span></a></li>
+					<li class="google"><a href="#"><span> </span></a></li>
+					<li class="tumblr"><a href="#"><span> </span></a></li>
+					<li class="instagram"><a href="#"><span> </span></a></li>
+					<li class="rss"><a href="#"><span> </span></a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+
+</body>
+</html>
