@@ -1,6 +1,12 @@
-<html>
-   <body>
-NON sei loggato
-
-   </body>
-</html>
+{% extends 'header.html' %}
+{% block content %}
+{% load staticfiles %}
+<div class="men">
+   	 <div class="container">
+   	  <div class="grid_1">
+   	  <img src="{% static 'admin/images/warning.png' %}" alt=""/>
+   	  <br><br><br>
+	   	  <p><h1>OPS, QUALCOSA E' ANDATO STORTO</h1>
+	   	  <p>La procedura non è andata a buon fine, riprova oppure contatta gli amministratori</p>
+      </div></div></div>
+{% endblock content %}

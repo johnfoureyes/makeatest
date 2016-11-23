@@ -1,155 +1,230 @@
-{% load static %}
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<title>Free Gym Website Template | Home :: w3layouts</title>
-
-<link href="progettoDjango{% static 'admin/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
-<link href="progettoDjango{% static 'admin/css/style.css' %}" rel='stylesheet' type='text/css' />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link
-	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800'
-	rel='stylesheet' type='text/css'>
-<link
-	href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700'
-	rel='stylesheet' type='text/css'>
-<script type="application/x-javascript">
-
-	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
-
-</script>
-<!--<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />-->
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event) {
-			event.preventDefault();
-			$('html,body').animate({
-				scrollTop : $(this.hash).offset().top
-			}, 1200);
-		});
-	});
-</script>
-<!-- grid-slider -->
-<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<!-- //grid-slider -->
-</head>
-<body>
-
-	<!-- start header_bottom -->
-	<div class="header-bottom">
-		<div class="container">
-
-			<div class="social">
-				<ul>
-					<li class="facebook"><a href="#"><span> </span></a></li>
-					<li class="twitter"><a href="#"><span> </span></a></li>
-					<li class="pinterest"><a href="#"><span> </span></a></li>
-					<li class="google"><a href="#"><span> </span></a></li>
-					<li class="tumblr"><a href="#"><span> </span></a></li>
-					<li class="instagram"><a href="#"><span> </span></a></li>
-					<li class="rss"><a href="#"><span> </span></a></li>
-				</ul>
+{% extends 'header.html' %}
+{% block content %}
+{% load staticfiles %}
+	<!--<div class="banner">
+   	  <div class="container">
+           <div class="header_top_right">
+		  	 <div class="lang_list">
+				<select tabindex="4" class="dropdown">
+					<option value="" class="label" value="">User</option>
+					<option value="1">Calc</option>
+					<option value="2">Gest</option>
+				</select>
+			 </div>
+			 <ul class="header_user_info">
+			  <a class="login" href="login.html">
+				<i class="user"> </i>
+				<li class="user_desc">Login</li>
+			  </a>
+			  <div class="clearfix"> </div>
+		     </ul>
+		    <!-- start search
+				<div class="search-box">
+				   <div id="sb-search" class="sb-search">
+					  <form>
+						 <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+						 <input class="sb-search-submit" type="submit" value="">
+						 <span class="sb-icon-search"> </span>
+					  </form>
+				    </div>
+				 </div>-->
+				 <!--search-scripts
+				 <script src="js/classie1.js"></script>
+				 <script src="js/uisearch.js"></script>
+				   <script>
+					 new UISearch( document.getElementById( 'sb-search' ) );
+				   </script>
+					<!search-scripts
+		            <div class="clearfix"> </div>
+			 </div>
+		     <div class="clearfix"> </div>
+	  </div>
+	  <div class="header_bottom">
+	   <div class="logo">
+		  <h1><a href="index.html"><span class="m_1"></span>MAKE A MATCH</a></h1>
+	   </div>
+   	   <div class="menu">
+	     <ul class="megamenu skyblue">
+				<li class="active grid"><a class="color3" href="index.html">HOME</a></li>
+				<li class="active grid"><a class="color3" href="index.html">HOME2</a></li>
+				<li class="active grid"><a class="color3" href="index.html">HOME3</a></li>
+				<li><a class="color7" href="404.html">404</a></li>
+				<div class="clearfix"> </div>
+			</ul>
 			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	<!-- end header_bottom -->
-	<!-- start menu -->
-	<div class="menu" id="menu">
-		<div class="container">
-			<div class="logo">
-				<a href="#"><img src="images/logo.png" alt="" /></a>
-			</div>
-			<div class="h_menu4">
-				<!-- start h_menu4 -->
-				<a class="toggleMenu" href="#">Menu</a>
-				<ul class="nav">
-					<li class="active">
-					<a href="#">Home</a></li>
+	        <div class="clearfix"> </div>
+	        </div>
+	    </div>-->
+   </div>
+   <div class="main">
+    <div class="container">
+    	<ul class="content-home">
+
+    	<div class="middle_content">
+    	<div class="container">
+    		<h2>Benvenuto</h2>
+    		<p>Make a Match! è un portale all'interno del quale potrai prenotare in assoluta libertà il tuo campo per partecipare a partite con amici o a tornei già organizzati. Scegli il tuo profilo tra Calciatore e Gestore, in questo modo potrai subito prendere parte al divertimento! Non dimenticare il resto dei nostri servizi ed il centro sportivo. Registrati subito!</p>
+    	</div>
+    </div>
+
+           <li class="col-sm-4">
+              <a href="single.html" class="item-link" title="">
+                <div class="bannerBox">
+                   <img src="{% static 'admin/images/field.jpg' %}" class="item-img" title="" alt="" width="100%" height="100%">
+                   <div class="item-html">
+                      <h3>Campo<span></span></h3>
+                      <button>Registra</button>
+
+                   </div>
+                </div>
+              </a>
+           </li>
+           <li class="col-sm-4">
+              <a href="single.html" class="item-link" title="">
+                <div class="bannerBox">
+                   <img src="{% static 'admin/images/rove.png' %}" class="item-img" title="" alt="" width="100%" height="100%">
+                   <div class="item-html">
+                      <h3>Match<span></span></h3>
+                      <button>Prenota</button>
+                   </div>
+                </div>
+              </a>
+           </li>
+           <li class="col-sm-4">
+              <a href="http://johnfoureyes.pythonanywhere.com/loggati/area_riservata" class="item-link" title="">
+                <div class="bannerBox">
+                   <img src="{% static 'admin/images/team.jpg' %}" class="item-img" title="" alt="" width="100%" height="100%">
+                   <div class="item-html">
+                      <h3>Tornei<span></span></h3>
+                      <button>Visualizza</button>
+                   </div>
+                </div>
+              </a>
+           </li>
+           <div class="clearfix"> </div>
+       </ul>
+    </div>
+
+   	<div class="content_middle_bottom">
+   		<div class="header-left" id="home">
+		      <section>
+				<ul class="lb-album" >
 					<li>
-					<a href="Contatti">Contact</a></li>
+						<a href="#image-1">
+							<img src="{% static 'admin/images/g1.jpg' %}"  class="img-responsive" alt="image01"/>
+							<span>Soccer</span>
+						</a>
+						<div class="lb-overlay" id="image-1">
+							<a href="#page" class="lb-close">x Close</a>
+							<img src="{% static 'admin/images/g1.jpg' %}"  class="img-responsive" alt="image01"/>
+							<div>
+								<h3>Soccer<span>/point/</span></h3>
+								<p>Praticato in tutto il mondo</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#image-2">
+							<img src="{% static 'admin/images/g2.jpg' %}"  class="img-responsive" alt="image02"/>
+							<span>Port de bras</span>
+						</a>
+						<div class="lb-overlay" id="image-2">
+							<img src="{% static 'admin/images/g2.jpg' %}"  class="img-responsive" alt="image02"/>
+							<div>
+								<h3>port de bras <span>/ˌpôr də ˈbrä/</span></h3>
+								<p>An exercise designed to develop graceful movement and disposition of the arms</p>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-3">
+							<img src="{% static 'admin/images/g3.jpg' %}"  class="img-responsive" alt="image03"/>
+							<span>Plié</span>
+						</a>
+						<div class="lb-overlay" id="image-3">
+							<img src="{% static 'admin/images/g3.jpg' %}"  class="img-responsive" alt="image03"/>
+							<div>
+								<h3>pli·é <span>/plēˈā/</span></h3>
+								<p>A movement in which a dancer bends the knees and straightens them again</p>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-4">
+							<img src="{% static 'admin/images/g4.jpg' %}"  class="img-responsive" alt="image04"/>
+							<span>Adagio</span>
+						</a>
+						<div class="lb-overlay" id="image-4">
+							<img src="{% static 'admin/images/g4.jpg' %}"  class="img-responsive" alt="image04"/>
+							<div>
+								<h3>a·da·gio <span>/əˈdäjō/</span></h3>
+								<p>A movement or composition marked to be played adagio</p>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-5">
+							<img src="{% static 'admin/images/g5.jpg' %}"  class="img-responsive" alt="image05"/>
+							<span>Frappé</span>
+						</a>
+						<div class="lb-overlay" id="image-5">
+							<img src="{% static 'admin/images/g5.jpg' %}"  class="img-responsive" alt="image05"/>
+							<div>
+								<h3>frap·pé<span>/fraˈpā/</span></h3>
+								<p>Involving a beating action of the toe of one foot against the ankle of the supporting leg</p>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-6">
+							<img src="{% static 'admin/images/g6.jpg' %}"  class="img-responsive" alt="image06"/>
+							<span>Glissade</span>
+						</a>
+						<div class="lb-overlay" id="image-6">
+							<img src="{% static 'admin/images/g6.jpg' %}"  class="img-responsive" alt="image06"/>
+							<div>
+								<h3>glis·sade <span>/gliˈsäd/</span></h3>
+								<p>One leg is brushed outward from the body, which then takes the weight while the second leg is brushed in to meet it</p>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-7">
+							<img src="{% static 'admin/images/g7.jpg' %}"  class="img-responsive" alt="image07"/>
+							<span>Jeté</span>
+						</a>
+						<div class="lb-overlay" id="image-7">
+							<img src="{% static 'admin/images/g7.jpg' %}"  class="img-responsive" alt="image07"/>
+							<div>
+								<h3>je·té <span>/zhə-ˈtā/</span></h3>
+								<p>A springing jump made from one foot to the other in any direction</p>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<li>
+						<a href="#image-8">
+							<img src="{% static 'admin/images/g8.jpg' %}"  class="img-responsive" alt="image08"/>
+							<span>Piqué</span>
+						</a>
+						<div class="lb-overlay" id="image-8">
+							<img src="{% static 'admin/images/g8.jpg' %}"  class="img-responsive" alt="image08"/>
+							<div>
+								<h3>pi·qué <span>/pēˈkā/</span></h3>
+								<p>Strongly pointed toe of the lifted and extended leg sharply lowers to hit the floor then immediately rebounds upward</p>
+							</div>
+							<a href="#page" class="lb-close">x Close</a>
+						</div>
+					</li>
+					<div class="clearfix"></div>
 				</ul>
-				<script type="text/javascript" src="js/nav.js"></script>
-			</div>
-			<!-- end h_menu4 -->
-			<div class="clear"></div>
+			</section>
 		</div>
-	</div>
-	<!-- end menu -->
-
-	<!-- start header_top quello con la foto grande-->
-	<div class="header">
-		<div class="container">
-			<div class="header-text">
-				<h1>Benvenuto</h1>
-				<h2>Registrati o effettua il Login</h2>
-				<br>
-				<div class="banner_btn">
-					<a href="registrazione/registrazione">Registrati</a> <a href="loggati/login">Login</a>
-				</div>
-			</div>
-			<div class="header-arrow">
-				<a href="#menu" class="class scroll"><span> </span> </a>
-			</div>
-		</div>
-	</div>
-	<!-- end header_top -->
-
-
-
-	<div class="footer-bottom">
-		<div class="container">
-			<div class="row section group">
-
-				<div class="col-md-4">
-					<div class="f-logo">
-						<img src="/SportCity/images/logo.png"
-							style="margin-top: 23px; margin-left: -20%;">
-					</div>
-				</div>
-				<div class="col-md-6" style="left: 55px; width: 767px;">
-
-					<!-- Blurb -->
-					<section>
-					<h2 class="cnt">Policy Cookie</h2>
-					<p>Utilizziamo cookie tecnici assimilati e di profilazione per
-						rendere pi agevole la navigazione e migliore il servizio.
-						Cliccando su un qualunque elemento del sito web, acconsenti
-						all'uso dei cookie.</p>
-					</section>
-
-				</div>
-
-				<div class="clear"></div>
-			</div>
-		</div>
-	</div>
-	<div class="copyright">
-		<div class="container">
-			<div class="copy">
-				<p>COPYRIGHT 2016 - ALL RIGHTS RESERVED - WEBSITE CREATED BY
-					PIETRO D'ANGELO & SAMUELE FICARA & FRANCESCO IRITI</p>
-			</div>
-			<div class="social">
-				<ul>
-					<li class="facebook"><a href="#"><span> </span></a></li>
-					<li class="twitter"><a href="#"><span> </span></a></li>
-					<li class="pinterest"><a href="#"><span> </span></a></li>
-					<li class="google"><a href="#"><span> </span></a></li>
-					<li class="tumblr"><a href="#"><span> </span></a></li>
-					<li class="instagram"><a href="#"><span> </span></a></li>
-					<li class="rss"><a href="#"><span> </span></a></li>
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-
-
-</body>
-</html>
+	  </div>
+   </div>
+{% endblock content %}

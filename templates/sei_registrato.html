@@ -1,6 +1,13 @@
-<html>
-   <body>
-Sei registrato
-
-   </body>
-</html>
+{% extends 'header.html' %}
+{% block content %}
+{% load staticfiles %}
+<div class="men">
+   	 <div class="container">
+   	  <div class="grid_1">
+   	  <img src="{% static 'admin/images/ok.png' %}" alt=""/>
+   	  <br><br><br>
+	   	  <p><h1>COMPLIMENTI!</h1>
+	   	  <p>Hai quasi completato la procedura per entrare a far parte del nostro club!</p>
+	   	  <p>Ti abbiamo appena inviato una mail contenente un link per attivare il tuo profilo!</p>
+      </div></div></div>
+{% endblock content %}

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 
-def login(request):
+def pagina_login(request):
     return render(request, 'loggati.html', {})
 
 def loggati(request):
@@ -10,15 +10,15 @@ def loggati(request):
     user = authenticate(username=username, password=password)
     if user is not None:
         login(request, user)
-        return render(request, 'area_riservata.html')
+        return render(request, 'buonfine.html')
     else:
         return render(request, 'login_error.html')
 
-#def loggati(request):
+def area_riservata(request):
 #    username = request.POST['username']
 #    password = request.POST['password']
 #    user = authenticate(username=username, password=password)
-#    if request.user.is_authenticated:
-#        return render(request, 'area_riservata.html')
-#    else:
-#        return render(request, 'login_error.html')
+    if request.user.is_authenticated:
+        return render(request, 'area_riservata.html')
+    else:
+        return render(request, 'login_error.html')
