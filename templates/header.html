@@ -34,18 +34,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	          <div class="clearfix"> </div>
 	       </div>
            <div class="header_top_right">
-		  	 <div class="lang_list">
-				<select tabindex="4" class="dropdown">
-					<option value="" class="label" value="">User</option>
-					<option value="1">Calc</option>
-					<option value="2">Gest</option>
-				</select>
-			 </div>
 			 <ul class="header_user_info">
-			  <a class="login" href="http://johnfoureyes.pythonanywhere.com/loggati/pagina_login">
-				<i class="user"> </i>
-				<li class="user_desc">Login</li>
-			  </a>
+			    {% if user.is_authenticated %}
+				<li class="user_desc">Benvenuto, {{ user.username }}</li>
+				<a class="login" href="http://johnfoureyes.pythonanywhere.com/loggati/do_logout">
+				<li style="margin-left:30px" class="user_desc">Logout</li>
+				</a>
+				{% else %}
+				<a class="login" href="http://johnfoureyes.pythonanywhere.com/loggati/pagina_login">
+			    <li class="user_desc">Login</li>
+			    </a>
+				{% endif %}
 			  <div class="clearfix"> </div>
 		     </ul>
 		    <!-- start search-->
@@ -76,7 +75,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	    <div class="menu">
 	     <ul class="megamenu skyblue">
 				<li class="active grid"><a class="color3" href="http://johnfoureyes.pythonanywhere.com/">HOME</a></li>
+				{% if user.is_authenticated %}
+				<li class="active grid"><a class="color3" href="http://johnfoureyes.pythonanywhere.com/loggati/area_riservata">AREA RISERVATA</a></li>
+				{% else %}
 				<li class="active grid"><a class="color3" href="http://johnfoureyes.pythonanywhere.com/registrazione/registrazione">REGISTRATI</a></li>
+				{% endif %}
 			</ul>
 			</div>
 	        <div class="clearfix"> </div>
@@ -91,8 +94,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    		<div class="cssmenu">
 		   <ul>
 			<li><a href="#">CHI SIAMO</a></li>
-			<li><a href="#">NOTE LEGALI</a></li>
-			<li><a href="contact.html">CONTATTACI</a></li>
+			<li><a href="https://johnfoureyes.pythonanywhere.com/note_legali">NOTE LEGALI</a></li>
+			<li><a href="#">CONTATTACI</a></li>
 		  </ul>
 		</div>
 		<ul class="social">

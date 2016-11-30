@@ -1,0 +1,32 @@
+{% extends 'header.html' %}
+{% block content %}
+{% load staticfiles %}
+<div class="men">
+    <div class="container">
+   	  <div class="grid_1">
+   	    <img src="{% static 'admin/images/coppa.png' %}" alt=""/>
+   	        <br><br><br>
+	   	    <p><h1>CAMPI</h1>
+	   	    <p>Enjoy!</p>
+	   	    <br><br>
+
+    {% for campo in campi %}
+    <div class="container">
+    <div class="col-md-4 sidebar_men">
+    <ul class="product-categories color">
+    <li class="cat-item cat-item-60"><h4>{{ campo.nome }}</h4></li>
+    <li class="cat-item cat-item-63"><p>Indirizzo dell'evento: </p>{{ campo.indirizzo }}</li>
+    <li class="cat-item cat-item-63"><p>Sport praticato: </p>{{ campo.tipo }}</li>
+    <div class="account-in">
+        <div class="col-md-7 account-top">
+            <input type="submit" value="Iscriviti">
+        </div>
+    </div>
+    </ul><br></div></div>
+    {% endfor %}
+
+    </div>
+</div>
+</div>
+
+{% endblock content %}

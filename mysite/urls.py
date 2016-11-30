@@ -23,4 +23,8 @@ urlpatterns = [
     url(r'^index', views.index, name='index'),
     url(r'^loggati/', include('loggati.urls')),
     url(r'^registrazione/', include('registrati.urls')),
+    url(r'^Tornei/', include('Tornei.urls')),
+    url(r'^Campi/', include('Campi.urls')),
+    url(r'^note_legali', views.notelegali, name='notelegali'),
+
 ]

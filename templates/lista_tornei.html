@@ -1,0 +1,32 @@
+{% extends 'header.html' %}
+{% block content %}
+{% load staticfiles %}
+<div class="men">
+    <div class="container">
+   	  <div class="grid_1">
+   	    <img src="{% static 'admin/images/sportivo.jpg' %}" alt=""/>
+   	        <br><br><br>
+	   	    <p><h1>TORNEI</h1>
+	   	    <p>Enjoy!</p>
+	   	    <br><br>
+
+    {% for torneo in tornei %}
+    <div class="container">
+    <div class="col-md-4 sidebar_men">
+    <ul class="product-categories color">
+    <li class="cat-item cat-item-60"><h4>{{ torneo.nome }}</h4></li>
+    <li class="cat-item cat-item-63"><p>Luogo dell'evento: </p>{{ torneo.campo }}</li>
+    <li class="cat-item cat-item-63"><p>Data: </p>{{ torneo.created_date }}</li>
+    <li class="cat-item cat-item-42"><p>Pubblicato il </p>{{ torneo.published_date }}</li>
+    <div class="account-in">
+        <div class="col-md-7 account-top">
+            <input type="submit" value="Iscriviti">
+        </div>
+    </div>
+    </ul><br></div></div>
+    {% endfor %}
+
+    </div>
+</div>
+</div>
+{% endblock content %}

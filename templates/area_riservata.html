@@ -4,9 +4,23 @@
 <div class="men">
    	 <div class="container">
    	  <div class="grid_1">
-   	  <img src="images/spunta.bmp" alt=""/>
+   	  <img src="{% static 'admin/images/spunta.bmp' %}" alt=""/>
    	  <br><br><br>
 	   	  <p><h1>LA TUA AREA RISERVATA</h1>
-	   	  <p>Benvenuto CiccIriti</p>
-      </div></div></div>
+	   	  <p>Benvenuto!</p>
+
+    <div class="container">
+    	<div class="col-md-4 sidebar_men">
+    	  <h3>Azioni</h3>
+    	  <ul class="product-categories color">
+    	    <li class="cat-item cat-item-42"><a href="#">Prenota un campo</a></li>
+			<li class="cat-item cat-item-63"><a href="http://johnfoureyes.pythonanywhere.com/Tornei/Tornei">Visualizza Tornei</a></li>
+			<li class="cat-item cat-item-63"><a href="#">La mia Agenda</a></li>
+			<li class="cat-item cat-item-63"><a href="http://johnfoureyes.pythonanywhere.com/Campi/Campi">Visualizza Campi</a></li>
+			<li class="cat-item cat-item-63"><a href="http://johnfoureyes.pythonanywhere.com/loggati/do_logout">Logout</a></li>
+		 </ul>
+
+		 </div></div></div>
+
+
 {% endblock content %}

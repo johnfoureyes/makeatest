@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 
 def pagina_login(request):
     return render(request, 'loggati.html', {})
@@ -13,6 +13,10 @@ def loggati(request):
         return render(request, 'buonfine.html')
     else:
         return render(request, 'login_error.html')
+
+def do_logout(request):
+    logout(request)
+    return render(request, 'index.html')
 
 def area_riservata(request):
 #    username = request.POST['username']

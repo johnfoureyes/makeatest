@@ -11,7 +11,7 @@ p {margin: 0;}
 html, body{
    font-family: 'PT Sans Narrow', sans-serif;
    font-size: 100%;
-   background:#fff; 
+   background:#fff;
 }
 body a{
 	transition:0.5s all;
@@ -37,6 +37,7 @@ body a{
 	float:right;
 	width:23%;
 }
+
 .box_11{
     cursor: pointer;
     padding: 5px 10px;
@@ -167,7 +168,7 @@ p.empty a {
 	height: 100%;
 	opacity: 0;
 }
-/* SELECTED FEEDBACK ITEM */ 
+/* SELECTED FEEDBACK ITEM */
 .dropdown .selected,
 .dropdown li{
 	display: block;
@@ -1235,7 +1236,7 @@ ul.women_pagenation li a:hover{
 .view img {
    display: block;
    position: relative;
-} 
+}
 .view .info {
     display: inline-block;
 	text-decoration: none;
@@ -1920,7 +1921,7 @@ ul.iphone li.phone_desc{
 }
 a.b-home {
   background:#33691E;
-  color:#000;
+  color:white;
   text-transform: uppercase;
   padding: 10px 30px;
   text-decoration: none;
@@ -2130,10 +2131,10 @@ a.cpns {
 ul.content-home li .item-html h3 {
     font-size:50px;
     line-height:30px;
-}  
+}
 ul.content-home li .item-html h3 span {
     font-size:40px;
-}  
+}
 ul.content-home li .item-html p {
   margin-bottom: 15px;
   font-size: 13px;
@@ -2141,11 +2142,11 @@ ul.content-home li .item-html p {
 }
 .middle_content h2 {
   font-size: 60px;
-}  
+}
 ul.content-home li .item-html button {
   font-size: 16px;
   padding: 10px 25px 10px;
-}  
+}
 .banner {
 	min-height:600px;
 	padding-top: 2em;
@@ -2176,22 +2177,22 @@ ul.content-home li .item-html button {
 }
 .b-link-stroke .b-wrapper1 {
   top: 4em;
-}  
+}
 .view .info {
   margin-top: 6em;
 }
 .b-link-stroke .b-wrapper2 {
   top: 13em;
-}  
+}
 .b-link-stroke .b-wrapper {
   top: 9em;
-}  
+}
 .sidebar_men h3 {
   font-size: 1.7em;
 }
 h2.quick {
   font-size: 1.1em;
-}  
+}
 p.quick_desc {
   font-size: 0.85em;
   line-height: 1.5em;
@@ -2199,7 +2200,7 @@ p.quick_desc {
 }
 .product-qty span {
   font-size: 1.1em;
-}  
+}
 .quantity_box {
   margin: 1em 0;
 }
@@ -2344,7 +2345,7 @@ ul.iphone li.phone_desc {
 @media (max-width:640px){
 .field_content h1 {
 	font-size: 1.3em;
-}	
+}
 .delivery span {
     float: none;
 }
@@ -2356,7 +2357,7 @@ ul.iphone li.phone_desc {
 }
 .account-in h3 {
     padding: 0;
-}    
+}
 a.order {
     margin: 1em 0;
 }
@@ -2452,7 +2453,7 @@ ul.content-home li img {
 @media (max-width:480px){
 .header_arrow {
 	margin-top:6em;
-}	
+}
 .middle_content h2 {
   font-size: 45px;
 }
@@ -2467,7 +2468,7 @@ ul.content-home {
 }
 ul.header_user_info {
   width: 44%;
-}  
+}
 .header_top_right {
   width: 51%;
 }
@@ -2544,7 +2545,7 @@ a.continue {
 @media (max-width:414px){
 i.user {
   margin: 6px 5px 0 5px;
-}	
+}
 .dropdown {
   width: 50px;
   padding: 8px 10px 5px;
@@ -2675,13 +2676,13 @@ ul.color {
 }
 ul.breadcrumbs li, ul.previous li a{
   font-size: 0.85em;
-}  
+}
 .mens-toolbar .sort {
   width: 44.5%;
 }
 .product_container {
   padding: 10px 10px 0;
-}  
+}
 .view .info {
   padding: 5px 28px;
   margin-top: 5em;
@@ -2710,7 +2711,7 @@ h2.quick {
 ul.size h3 {
   font-size: 1em;
   margin-bottom: 10px;
-}  
+}
 ul.size {
   margin-top: 1em;
 }
@@ -2720,7 +2721,7 @@ ul.size {
 .btn.btn-primary {
   font-size: 1em;
   padding: 7px 30px;
-}  
+}
 ul.tab_list {
   padding: 10px;
 }
@@ -2728,7 +2729,7 @@ ul.tab_list li a {
   color: #999;
   font-size: 0.85em;
   line-height: 1.8em;
-}  
+}
 .sap_tabs {
   margin:2em 0;
   padding:0;
@@ -2739,7 +2740,7 @@ ul.tab_list li a {
 h3.m_1 {
   font-size: 1.2em;
   margin-bottom: 1em;
-}  
+}
 ul.product li.product_desc h4 {
   font-size: 14px;
 }
@@ -2748,7 +2749,7 @@ a.link-cart {
 }
 p.single_price {
   margin-bottom: 5px;
-}  
+}
 .grid_1 h1, .contact_form h2 {
   font-size: 1.3em;
 }
