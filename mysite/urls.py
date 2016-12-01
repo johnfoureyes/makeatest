@@ -26,5 +26,6 @@ urlpatterns = [
     url(r'^Tornei/', include('Tornei.urls')),
     url(r'^Campi/', include('Campi.urls')),
     url(r'^note_legali', views.notelegali, name='notelegali'),
+    url(r'^agenda', views.agenda, name='agenda'),
 
 ]
