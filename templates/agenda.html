@@ -10,14 +10,15 @@
 	   	    <p>Enjoy!</p>
 	   	    <br><br>
 
-    {% for campo in campi %}
+    {% for iscritto in iscritti %}
+    {% if iscritto.username == user.username %}
     <div class="container">
     <div class="col-md-4 sidebar_men">
     <ul class="product-categories color">
-    <li class="cat-item cat-item-60"><h4>{{ campo.nome }}</h4></li>
-    <li class="cat-item cat-item-63"><p>Indirizzo dell'evento: </p>{{ campo.indirizzo }}</li>
-    <li class="cat-item cat-item-63"><p>Sport praticato: </p>{{ campo.tipo }}</li>
-    </ul><br></div></div>
+    <li class="cat-item cat-item-60"><h4>{{ iscritto.nome_torneo }}</h4></li>
+    <li class="cat-item cat-item-63"><p>Luogo dell'evento: </p>{{ iscritto.campo_torneo }}</li>
+    <div class="account-in">
+    {% endif %}
     {% endfor %}
 
     </div>

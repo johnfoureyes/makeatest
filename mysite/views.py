@@ -5,6 +5,3 @@ def index(request):
 
 def notelegali(request):
     return render(request, 'note_legali.html', {})
-
-def agenda(request):
-    return render(request, 'agenda.html', {})

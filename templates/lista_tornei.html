@@ -19,12 +19,23 @@
     <li class="cat-item cat-item-63"><p>Data: </p>{{ torneo.created_date }}</li>
     <li class="cat-item cat-item-42"><p>Pubblicato il </p>{{ torneo.published_date }}</li>
     <div class="account-in">
-        <div class="col-md-7 account-top">
-            <input type="submit" value="Iscriviti">
-        </div>
-    </div>
+
+            <div class="col-md-7 account-top">
+		  <form name = "form" action = "/Tornei/iscrivi_tornei"
+         method = "POST" ><input type="submit" value="Iscriviti">
+{% csrf_token %}
+
+				<input type="hidden" value={{ torneo.nome }} name="nome_torneo">
+				<input type="hidden" value={{ torneo.campo }} name="campo_torneo">
+				<input type="hidden" value={{ user.username }} name="username">
+		   </form>
+		</div>
+
     </ul><br></div></div>
     {% endfor %}
+
+
+
 
     </div>
 </div>
